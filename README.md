@@ -1,6 +1,10 @@
 # Power-Triangle
 Electrical power calculator (active, reactive, apparent) and power factor for AC circuits.
 
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/182bd043-3c9e-4f1a-b8f9-4c180f197a7b">
+</p>
+
 ---
 
 ## What is the Power Triangle ⚡
