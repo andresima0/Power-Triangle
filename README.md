@@ -2,7 +2,7 @@
 Electrical power calculator (active, reactive, apparent) and power factor for AC circuits.
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/182bd043-3c9e-4f1a-b8f9-4c180f197a7b">
+  <video src="https://github.com/user-attachments/assets/25c8165a-5b7f-40f5-b4ff-6250a0fab1ba">
 </p>
 
 ---
