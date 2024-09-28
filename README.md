@@ -47,9 +47,10 @@ O fator de potência indica a eficiência do sistema, onde um valor de 1 (ou 100
 ## Triângulo das Potências:
 Graficamente, o triângulo das potências pode ser representado da seguinte forma:
 
-<div style="display: flex; justify-content: center;">
-    <img src="https://github.com/user-attachments/assets/8d7a7969-5c1d-46ed-9f53-8d45b49022ea" width="600"/>
-</div>
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/8d7a7969-5c1d-46ed-9f53-8d45b49022ea" alt="powerTriangleDiagram" width="600">
+</p>
 
 - O cateto horizontal representa a **potência ativa (P)**.
 - O cateto vertical representa a **potência reativa (Q)**.
@@ -80,12 +81,12 @@ Essa representação é útil para o projeto e a análise de sistemas elétricos
 
 # O Aplicativo
 
-**Power- Triangle** é um aplicativo Android desenvolvido para calcular as três potências fundamentais em circuitos de corrente alternada (CA): **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**, baseando-se no triângulo das potências elétricas.
+**Power-Triangle** é um aplicativo Android desenvolvido para calcular as três potências fundamentais em circuitos de corrente alternada (CA): **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**, baseando-se no triângulo das potências elétricas.
 
-<div style="display: flex; justify-content: center;">
+<p align="center">
     <img src="https://github.com/user-attachments/assets/37b3a1c6-7865-4a14-8506-c4520c986080" alt="PowerTriangle1" width="300"/>
     <img src="https://github.com/user-attachments/assets/d88ff380-fb50-41c8-b810-bb068c7fcf72" alt="PowerTriangle2" width="300"/>
-</div>
+</p>
 
 ## Funcionalidades:
 
