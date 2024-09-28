@@ -6,6 +6,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.pow
 import kotlin.math.sqrt
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editTextValue2: EditText
     private lateinit var buttonCalculate: Button
     private lateinit var buttonClear: Button
+    private lateinit var buttonInfo: Button // Adicionando o botão de informação
     private lateinit var textViewResult: TextView
     private lateinit var labelValue1: TextView
     private lateinit var labelValue2: TextView
@@ -22,8 +24,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Inicializar o Spinner
+        // Inicializar os componentes da interface
         spinnerCalculation = findViewById(R.id.spinnerCalculation)
+        editTextValue1 = findViewById(R.id.editTextValue1)
+        editTextValue2 = findViewById(R.id.editTextValue2)
+        buttonCalculate = findViewById(R.id.buttonCalculate)
+        buttonClear = findViewById(R.id.buttonClear)
+        buttonInfo = findViewById(R.id.button_info) // Inicializando o botão de informação
+        textViewResult = findViewById(R.id.textViewResult)
+        labelValue1 = findViewById(R.id.labelValue1)
+        labelValue2 = findViewById(R.id.labelValue2)
 
         // Definir as opções do Spinner programaticamente
         val options = arrayOf(
@@ -44,15 +54,6 @@ class MainActivity : AppCompatActivity() {
 
         // Associar o adaptador ao Spinner
         spinnerCalculation.adapter = adapter
-
-        // Inicializar outros componentes da interface
-        editTextValue1 = findViewById(R.id.editTextValue1)
-        editTextValue2 = findViewById(R.id.editTextValue2)
-        buttonCalculate = findViewById(R.id.buttonCalculate)
-        buttonClear = findViewById(R.id.buttonClear)
-        textViewResult = findViewById(R.id.textViewResult)
-        labelValue1 = findViewById(R.id.labelValue1)
-        labelValue2 = findViewById(R.id.labelValue2)
 
         // Listener para o Spinner
         spinnerCalculation.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -76,6 +77,13 @@ class MainActivity : AppCompatActivity() {
         // Listener para o botão de limpar
         buttonClear.setOnClickListener {
             clearFields()
+        }
+
+        // Listener para o botão de informação
+        buttonInfo.setOnClickListener {
+            // Abrir a InfoActivity
+            val intent = Intent(this, InfoActivity::class.java)
+            startActivity(intent)
         }
     }
 

@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Power Triangle</string>
-    <string-array name="calculation_options">
-        <item>Calcular Potência Ativa (P)</item>
-        <item>Calcular Potência Reativa (Q)</item>
-        <item>Calcular Potência Aparente (S)</item>
-    </string-array>
+    <string name="app_name">Power-Triangle</string>
+    <string name="calculate_button">Calcular</string>
+    <string name="clear_button">Limpar</string>
+    <string name="info_button">Informações</string>
+    <string name="result_text">Resultado:</string>
+    <string name="label_value1">Valor 1</string>
+    <string name="label_value2">Valor 2</string>
 </resources>
