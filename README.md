@@ -3,6 +3,115 @@ Electrical power calculator (active, reactive, apparent) and power factor for AC
 
 ---
 
+## What is the Power Triangle ⚡
+
+The **power triangle** is a graphical tool used in electricity, especially in alternating current (AC) systems, to illustrate the relationship between three types of power: **active power (P)**, **reactive power (Q)**, and **apparent power (S)**. Each of these powers is related in a vectorial manner, and the triangle helps to understand how they interact.
+
+## Types of Power:
+
+### 1. **Active Power (P)**:
+- Measured in **watts (W)**.
+- Represents the real power consumed by equipment and converted into useful work, such as motor movement or heat generation.
+- It is the power that effectively performs work in the system.
+- It lies on the horizontal axis of the triangle.
+
+### 2. **Reactive Power (Q)**:
+- Measured in **volt-amperes reactive (VAR)**.
+- It is associated with energy stored and returned by reactive elements such as inductors and capacitors, without performing useful work.
+- It is essential for the operation of equipment that depends on electromagnetic fields, such as transformers and motors.
+- It lies on the vertical axis of the triangle.
+- It can be positive (inductive) or negative (capacitive), depending on the type of reactance present in the circuit.
+
+### 3. **Apparent Power (S)**:
+- Measured in **volt-amperes (VA)**.
+- It is the vectorial combination of active and reactive power. It represents the total power supplied to the system, but not all of this power is converted into useful work.
+- It lies on the hypotenuse of the triangle.
+
+## Mathematical Relationship:
+The relationship between these powers follows the formula based on the Pythagorean theorem:
+
+**S² = P² + Q²**
+
+Where:
+- **S** is the apparent power,
+- **P** is the active power,
+- **Q** is the reactive power.
+
+## Power Factor (PF):
+The **power factor** is the ratio between active power and apparent power:
+
+**PF = P / S**
+
+The power factor indicates the system's efficiency, where a value of 1 (or 100%) means that all the supplied power is converted into useful power (active power). Lower values indicate the presence of reactive power in the system, which reduces efficiency.
+
+## Power Triangle:
+Graphically, the power triangle can be represented as follows:
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/8d7a7969-5c1d-46ed-9f53-8d45b49022ea" alt="powerTriangleDiagram" width="600">
+</p>
+
+- The horizontal leg represents **active power (P)**.
+- The vertical leg represents **reactive power (Q)**.
+- The hypotenuse represents **apparent power (S)**.
+
+The tangent of the angle \( \theta \), between the active and apparent power, indicates the ratio between reactive and active power:
+
+**tan(θ) = Q / P**
+
+And the cosine of \( \theta \) corresponds to the power factor:
+
+**cos(θ) = PF**
+
+## Application Example:
+If an electrical system has an active power of 300 W and a reactive power of 400 VAR, the apparent power can be calculated as follows:
+
+**S = √(300² + 400²) = 500 VA**
+
+The power factor would be:
+
+**PF = 300 / 500 = 0.6**
+
+This indicates that 60% of the supplied power is being used for useful work, while the remainder is associated with reactances in the circuit.
+
+This representation is useful for designing and analyzing electrical systems, especially in industries that consume large amounts of reactive power due to motors and transformers.
+
+---
+
+## The App
+
+**Power-Triangle** is an Android app developed to calculate the three fundamental powers in alternating current (AC) circuits: **active power (P)**, **reactive power (Q)**, and **apparent power (S)**, based on the power triangle.
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/37b3a1c6-7865-4a14-8506-c4520c986080" alt="PowerTriangle1" width="300"/>
+    <img src="https://github.com/user-attachments/assets/d88ff380-fb50-41c8-b810-bb068c7fcf72" alt="PowerTriangle2" width="300"/>
+</p>
+
+## Features:
+
+- **Active Power Calculation (P)**: Based on reactive power (Q) and apparent power (S), the app calculates active power, which is the useful power consumed by the circuit.
+- **Reactive Power Calculation (Q)**: Using active power (P) and apparent power (S), the app calculates reactive power, responsible for energy stored in the circuit.
+- **Apparent Power Calculation (S)**: Based on the values of active power (P) and reactive power (Q), the app determines the apparent power, which represents the total power supplied to the circuit.
+- **Power Factor Calculation (PF)**: The power factor is automatically calculated for each scenario, helping to identify the circuit's efficiency.
+
+## User Interface:
+
+- **Spinner for Calculation Selection**: The user can choose which type of power they want to calculate (active, reactive, or apparent).
+- **Dynamic Input Fields**: The input fields adapt according to the calculation selection, requesting the necessary values to perform the operation.
+- **Action Buttons**: Two buttons, "Calculate" and "Clear", facilitate the execution of calculations and resetting of the fields.
+- **Custom Color Gradient**: The interface features buttons and cards styled with a green gradient, providing a visually pleasant experience.
+
+## How It Works:
+
+1. Select the type of calculation you want to perform (active, reactive, or apparent power).
+2. Enter the requested values into the input fields.
+3. Press the **"Calculate"** button to view the result and the corresponding power factor.
+4. To perform new calculations, press the **"Clear"** button and enter new values.
+
+---
+
+## Portuguese version:
+
 ## O que é o Triângulo das Potências (Power Triangle) ⚡
 
 O **triângulo das potências** é uma ferramenta gráfica usada em eletricidade, especialmente em sistemas de corrente alternada (CA), para ilustrar a relação entre três tipos de potências: **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**. Cada uma dessas potências está relacionada de maneira vetorial, e o triângulo facilita a compreensão de como elas interagem.
@@ -79,7 +188,7 @@ Essa representação é útil para o projeto e a análise de sistemas elétricos
 
 ---
 
-# O Aplicativo
+## O Aplicativo
 
 **Power-Triangle** é um aplicativo Android desenvolvido para calcular as três potências fundamentais em circuitos de corrente alternada (CA): **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**, baseando-se no triângulo das potências elétricas.
 
