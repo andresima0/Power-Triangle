@@ -1,11 +1,11 @@
 # Power-Triangle
 Electrical power calculator (active, reactive, apparent) and power factor for AC circuits.
 
+---
+
 ## O que é o Triângulo das Potências (Power Triangle) ⚡
 
 O **triângulo das potências** é uma ferramenta gráfica usada em eletricidade, especialmente em sistemas de corrente alternada (CA), para ilustrar a relação entre três tipos de potências: **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**. Cada uma dessas potências está relacionada de maneira vetorial, e o triângulo facilita a compreensão de como elas interagem.
-
----
 
 ## Tipos de Potências:
 
@@ -27,8 +27,6 @@ O **triângulo das potências** é uma ferramenta gráfica usada em eletricidade
 - É a combinação vetorial das potências ativa e reativa. Representa a potência total fornecida ao sistema, mas nem toda essa potência é convertida em trabalho útil.
 - Fica na hipotenusa do triângulo.
 
----
-
 ## Relação Matemática:
 A relação entre essas potências segue a fórmula baseada no teorema de Pitágoras:
 
@@ -39,8 +37,6 @@ Onde:
 - **P** é a potência ativa,
 - **Q** é a potência reativa.
 
----
-
 ## Fator de Potência (FP):
 O **fator de potência** é a relação entre a potência ativa e a potência aparente:
 
@@ -48,10 +44,12 @@ O **fator de potência** é a relação entre a potência ativa e a potência ap
 
 O fator de potência indica a eficiência do sistema, onde um valor de 1 (ou 100%) significa que toda a potência fornecida é convertida em potência útil (potência ativa). Valores menores indicam a presença de potência reativa no sistema, o que reduz a eficiência.
 
----
-
 ## Triângulo das Potências:
 Graficamente, o triângulo das potências pode ser representado da seguinte forma:
+
+<div style="display: flex; justify-content: center;">
+    <img src="https://github.com/user-attachments/assets/8d7a7969-5c1d-46ed-9f53-8d45b49022ea" width="600"/>
+</div>
 
 - O cateto horizontal representa a **potência ativa (P)**.
 - O cateto vertical representa a **potência reativa (Q)**.
@@ -64,8 +62,6 @@ A tangente do ângulo \( \theta \), entre a potência ativa e a aparente, indica
 E o cosseno de \( \theta \) corresponde ao fator de potência:
 
 **cos(θ) = FP**
-
----
 
 ## Exemplo de Aplicação:
 Se um sistema elétrico tem uma potência ativa de 300 W e uma potência reativa de 400 VAR, a potência aparente pode ser calculada assim:
@@ -80,7 +76,16 @@ Isso indica que 60% da potência fornecida está sendo utilizada para trabalho �
 
 Essa representação é útil para o projeto e a análise de sistemas elétricos, especialmente em indústrias que consomem grandes quantidades de energia reativa devido a motores e transformadores.
 
-**Triangle of Power** é um aplicativo Android desenvolvido para calcular as três potências fundamentais em circuitos de corrente alternada (CA): **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**, baseando-se no triângulo das potências elétricas.
+---
+
+# O Aplicativo
+
+**Power- Triangle** é um aplicativo Android desenvolvido para calcular as três potências fundamentais em circuitos de corrente alternada (CA): **potência ativa (P)**, **potência reativa (Q)** e **potência aparente (S)**, baseando-se no triângulo das potências elétricas.
+
+<div style="display: flex; justify-content: center;">
+    <img src="https://github.com/user-attachments/assets/37b3a1c6-7865-4a14-8506-c4520c986080" alt="PowerTriangle1" width="300"/>
+    <img src="https://github.com/user-attachments/assets/d88ff380-fb50-41c8-b810-bb068c7fcf72" alt="PowerTriangle2" width="300"/>
+</div>
 
 ## Funcionalidades:
 
@@ -102,4 +107,3 @@ Essa representação é útil para o projeto e a análise de sistemas elétricos
 2. Insira os valores solicitados nos campos de entrada.
 3. Pressione o botão **"Calcular"** para visualizar o resultado e o fator de potência correspondente.
 4. Para realizar novos cálculos, pressione o botão **"Limpar"** e insira novos valores.
-
